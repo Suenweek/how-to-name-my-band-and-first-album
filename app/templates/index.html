@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
+{% block style %}
+    #title {
+        margin: auto;
+        text-align: center;
+        font-size: 2em;
+        padding: 2em 0;
+    }
+{% endblock %}
+
 {% block content %}
-    <p>{{ band_name }} — {{ first_album_name }}</p>
+    <p id="title">{{ band_name }} — {{ first_album_name }}</p>
 {% endblock %}

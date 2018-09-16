@@ -2,16 +2,19 @@
 <html>
 
 <head>
-  <!-- Title -->
-  <title>{{ config.APP_NAME }}</title>
+    <title>{{ config.APP_NAME }}</title>
+
+    <style type="text/css">
+        {% block style %}
+        {% endblock %}
+    </style>
 </head>
 
 <body>
-  <div>
-    <!-- Content -->
-    {% block content %}
-    {% endblock %}
-  </div>
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
 </body>
 
 </html>
